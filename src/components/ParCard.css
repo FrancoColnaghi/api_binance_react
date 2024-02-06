@@ -1,0 +1,98 @@
+.par-card{
+    border: 1px solid white;
+    width: calc(100% - 30px);
+    height: 150px;
+    margin-top:  15px;
+
+    display: flex;
+    .info-par{
+        border: 1px solid white;
+        height: 50px;
+        width: 250px;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+
+        .title{
+            /*border: 1px solid white;*/
+            padding-left: 15px;
+            display: flex;
+            flex: 1;
+
+        }
+        .valor{
+            /*border: 1px solid white;*/
+            text-align: center;
+
+            flex:1;
+        }
+    }
+    .bollinger-container{
+        width: 100%;
+
+        display: flex;
+
+        .bollinger-card{
+            border-left: 1px solid white;
+            
+            flex: 1;
+            .select-time{
+                height: 40px;
+
+                display: flex;
+                align-items: center;
+                select{
+                    margin-left: 15px;
+                    height: 25px;
+                }
+                div{
+                    height: 40px;
+                    text-align: center;
+
+                    display: flex;
+                    flex-direction: column;
+
+                    flex: 1;
+                    .title{
+                        margin: 5px 0 0;
+                        height: 15px;
+                        font-size: 12px;
+
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                    }
+                    .sma{
+                        margin: 0;
+                        height: 20px;
+                        line-height: 20px;
+
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+                        .left{
+                            margin: 0;
+                            height: 20px;
+                            text-align: left;
+                            padding-left: 10px;
+                        }
+                        .tx-red{
+                            color: red;
+                        }
+                        .tx-green{
+                            color: green;
+                        }
+                        .rigth{
+                            margin: 0;
+                            height: 20px;
+                            text-align: right;
+                            padding-right: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
